@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .box {
+          width: 100px;
+          height: 100px;
+          background-color: dodgerblue;
+        }
+        .box2 {
+          @apply w-12 h-12 bg-red-500;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box md:box2"></div>
+  </body>
+</html>

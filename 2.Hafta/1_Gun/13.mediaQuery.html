@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            padding: 0;
+            margin: 0;
+
+        }
+        nav {
+            background-color: rgb(117, 163, 194);
+            padding: 8px;
+            color: white;
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        nav ul {
+            all: unset;
+            display: flex;
+            flex-direction:row;
+            gap: 16px;
+            font-family: sans-serif;
+        }
+
+        nav ul li {
+            list-style-type: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            .div {
+                width: 20%;
+                height: 100%;
+            }         
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>About</li>
+                <li>Apps</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

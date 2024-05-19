@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: rgba(223, 103, 143, 0.5);
+            opacity: ;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            top: 16px;
+            left: 20px;
+            /* top bottom vs verilebilir*/
+        }
+
+        .absolute{
+            position: absolute;
+            top: 16px;
+            left: 25px;
+            /*diger elementler bu elementten etkilenmezler normal akisin disindadir*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box static">static</div>
+
+    <div class="box relative">relative</div>
+
+    <div class="box absolute">absolute</div>
+</body>
+</html>
